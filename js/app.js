@@ -11,7 +11,7 @@ gregorianDate.addEventListener('change', () => {
   convertToMisriDate(date);
 });
 const convertToMisriDate = (date) => {
-  const url = `http://localhost:8080/gregToMisri/${date}`;
+  const url = `https://misri-date-api.onrender.com/gregToMisri/${date}`;
   fetch(url, {
     method: 'GET',
     headers: {
